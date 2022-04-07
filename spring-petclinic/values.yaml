@@ -40,6 +40,19 @@ service:
   type: LoadBalancer
   port: 8080
 
+  #database:
+  # dbname: db_mysql
+ # dbtable: music
+ #dbuserpass: 
+
+MYSQL_ROOT_PASSWORD:
+MYSQL_ALLOW_EMPTY_PASSWORD: true
+MYSQL_USER : petclinic
+MYSQL_PASSWORD : petclinic
+MYSQL_DATABASE : petclinic
+
+
+
 ingress:
   enabled: false
   className: ""
@@ -80,3 +93,4 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
